@@ -7,7 +7,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" /> 
   <link rel="stylesheet" href="dist/main.css">
   <style>
-    .pickpublicationHHK {
+    .pickpublication {
       margin-bottom: 10px; /* Adjust this value to control the space */
       /*padding: 10px; /* Adjust this value as needed */
     }
@@ -25,6 +25,93 @@
       font-size:14px;
       font-weight: 700;
     }
+    .containerHHK {
+            padding: 20px;
+			text-align:center;
+        }
+        .section {
+            background: white;
+            margin: 1px auto;
+            padding: 20px;
+            max-width: 1200px;
+        }
+		.image-container {
+            
+			margin-right: 5px;
+        }
+        
+        .image-container img {
+            width: 300px;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        .text-container {
+            
+			margin-left: 10px;
+        }
+        
+        h2 {
+            margin-top: 0;
+            color: #333;
+			font-size: 14px;
+			font-weight: 700;
+        }
+        
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+		.pickpublicationHHK {
+			display: flex;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			background-color:transparent;
+	        background-image:linear-gradient(270deg,#e4e7f0,#f1f3f8 60%);
+            border-radius: 5px;
+        }
+    /* 媒体查询，用于手机端适配 */
+ @media only screen and (max-width: 800px) {
+
+.containerHHK {
+     padding: 2px;
+	 text-align:center;
+}
+.section {
+     background: white;
+     margin: 1px auto;
+     padding: 2px;
+     max-width: 1200px;
+}
+
+.image-container, .text-container {
+			width: 100%;
+        }
+		
+.image-container img {
+            width: 90%;
+        }
+
+.pickpublicationHHK {
+     flex-direction: column;
+     gap: 15px;
+     background-color:transparent;
+	 background-image:linear-gradient(270deg,#e4e7f0,#f1f3f8 60%);
+     max-width: 1200px;
+}
+
+}
+
+@media only screen and (max-width: 400px) {
+.image-container img {
+            width: 100%;
+        }
+}
+
   </style>
 </head>
 
